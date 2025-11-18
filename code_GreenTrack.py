@@ -266,7 +266,6 @@ elif moyen_de_transport == '7' or "marche_a_pied":
         statut="Negatif par rapport au seuil journalier de 5.5 kg"
     
     print(f" Votre bilan est la suivante \n nom:{nom} \n date du GreenTrack:{date} \n Nombre de carbone de deplacement(kg) :{quantite_de_carbone_km} \n Nombre de carbone par rapport a la nourriture(kg):{quantite_de_carbone_repas} \n Nombre de carbone compensé:{quantite_produite_par_arbre} \n Nombre d'emission de carbone totale :{nbre_totale} \n Statut du bilan :{statut} ")
-    with open("base.csv" , "a") as f :
-        f.write(f"{nom},{date},{quantite_de_carbone_km},{quantite_de_carbone_repas},{quantite_produite_par_arbre},{nbre_totale},{statut} \n ")
+   
 
    
